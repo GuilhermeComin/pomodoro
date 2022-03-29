@@ -1,0 +1,202 @@
+/*=========== RESET ========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1,625rem;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  button {
+    background-color: transparent;
+    border: none;
+  }
+
+  /*=========== VARIABLES ========================= */
+  :root {
+    --primary-color: #333853;
+    --primary-color-alt: #3C4262;
+    --secondary-color: #797c8f;
+    --secondary-color-alt: #212747;
+    --text-color: #a9afd6;
+    --green: #219653;
+    --yellow: #F2C94C;
+  }
+  
+  /*=========== BASE ========================= */
+  
+  body {
+    font: 400 1rem "Poppins", sans-serif;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  .title {
+    font: bold 4rem "Poppins", sans-serif;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    margin: 5rem;
+  }
+  
+  .button-start {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    height: 3.5rem;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 2rem;
+    border-radius: 0.25rem;
+    font: 500 1rem 'DM Sans', sans-serif;
+    transition: background 0.2s;
+  }
+  
+  .button-start:hover {
+    background-color: var(--secondary-color-alt);
+  }
+
+  /* =============== CONTENT ================ */
+
+ #content .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #content .work, .rest, .session {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0 1.5rem;
+  }
+
+  #content .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+  }
+
+  #content .up, .down {
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    color: var(--primary-color);
+  }
+
+  #content .up:hover, .down:hover {
+    background-color: var(--secondary-color-alt);
+    color: var(--text-color);
+  }
+
+  #content i {
+    pointer-events: none;
+    /* color: var(--primary-color); */
+  }
+
+  #content .value {
+    text-align: center;
+    width: 8rem;
+    height: auto;
+    background-color: var(--primary-color-alt);
+    font-size: 4rem;
+    font-weight: bold;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+    border-radius: 1rem;
+    user-select: none;
+  }
+
+  #content .text {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0.75rem;
+  }
+
+  #continue {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+
+  }
+
+  #continue .continue {
+    background-color: var(--primary-color-alt);
+    width: 30%;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    transition: background 0.2s;
+    cursor: pointer;
+  }
+  
+  #continue .continue:hover {
+    background-color: var(--secondary-color-alt);
+  }
+
+  #continue button {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-color);
+    cursor: pointer;
+  }
+
+  #continue i {
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+  
+
+ /* 
+  #content .work, .stop, .session {
+    margin: 3rem;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #content .valor {
+    background-color: var(--primary-color-alt);
+    width: 8rem;
+    height: 100%;
+    text-align: center;
+    padding: 0 1rem;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 2px rgba(0,0,0, 0.2);
+    font-size: 4rem;
+    font-weight: bold;
+  }
+
+  #content .text {
+    margin-top: 0.75rem;
+    font-weight: bold;
+  }
+
+  #content button {
+    width: 2rem;
+    height: 2rem;
+    color: red;
+  } */
+  
+
