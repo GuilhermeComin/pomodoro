@@ -129,6 +129,23 @@
     user-select: none;
   }
 
+  #content .input-value {
+    box-shadow: none;
+    height: 100%;
+    width: 100%;
+    font-size: 4rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    background-color: var(--primary-color-alt);
+    border: none;
+    color: var(--text-color);
+    text-align: center;
+  }
+
+  #content .input-value:focus-visible {
+    outline: none;
+  }
+
   #content .text {
     font-size: 1.25rem;
     font-weight: bold;
