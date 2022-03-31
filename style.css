@@ -68,7 +68,16 @@
     background-color: var(--secondary-color-alt);
   }
 
-  /* =============== CONTENT ================ */
+  input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  }
+
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+  /* =============== TELA INICIAL ================ */
 
  #content .container {
     display: flex;
@@ -193,3 +202,140 @@
     margin: 1rem;
   }
 
+/* ================= TELA TRABALHO ====================== */
+
+  #trabalho .container {
+    padding: 4rem 10rem;
+    position: relative;
+  }
+
+  #trabalho .menu {
+    position: relative;
+    padding: 1rem;
+    margin-bottom: 15rem;
+  }
+
+  #trabalho .title {
+    display: inline;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    margin: 0;
+  }
+
+  #trabalho .voltar-inicio {
+    font-size: 4rem;
+    color: var(--text-color);
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    display: inline;
+  }
+
+  #trabalho button {
+    background-color: var(--primary-color-alt);
+    width: 12rem;
+    height: 6rem;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    transition: background 0.2s;
+    cursor: pointer;
+    user-select: none;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--text-color);
+    padding: 1rem;
+  }
+
+  #trabalho button:hover {
+    background-color: var(--secondary-color-alt);
+  }
+
+  #trabalho button:active {
+    background-color: var(--secondary-color);
+    border: 2px solid var(--secondary-color-alt);
+  }
+
+  #trabalho .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  #trabalho .contador {
+    background-color: var(--primary-color-alt);
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: bold;
+    user-select: none;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #trabalho .contador p {
+    width: 20rem;
+    height: 20rem;
+    border: 0.4rem solid var(--green);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  #trabalho .informacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-left: 5rem;
+  }
+
+  #trabalho .status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--green);
+  }
+
+  #trabalho .status .info-sessao {
+    margin-top: -1.5rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #trabalho .play-button {
+    margin-top: 0.5rem;
+    background-color: var(--primary-color-alt);
+    border-radius: 0.5rem;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+    text-shadow: 0 0 10px rgba(0,0,0,0.2);
+    height: 8rem;
+    width: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s;
+    user-select: none;
+  }
+
+  #trabalho .play-button:hover {
+    background-color: var(--secondary-color-alt);
+  }
+
+  #trabalho .play-button:active {
+    background-color: var(--secondary-color);
+    border: 2px solid var(--secondary-color-alt);
+  }
