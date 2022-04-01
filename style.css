@@ -299,6 +299,7 @@
     font-size: 4rem;
     font-weight: bold;
     margin-left: 5rem;
+    width: 20rem;
   }
 
   #trabalho .status {
@@ -315,7 +316,7 @@
     flex-direction: row;
   }
 
-  #trabalho .play-button {
+  #trabalho #play-button, #stop-button {
     margin-top: 0.5rem;
     background-color: var(--primary-color-alt);
     border-radius: 0.5rem;
@@ -331,11 +332,23 @@
     user-select: none;
   }
 
-  #trabalho .play-button:hover {
+  #trabalho #play-button:hover, #stop-button:hover {
     background-color: var(--secondary-color-alt);
   }
 
-  #trabalho .play-button:active {
+  #trabalho #play-button:active, #stop-button:active {
     background-color: var(--secondary-color);
     border: 2px solid var(--secondary-color-alt);
+  }
+
+  #trabalho #play-button.hide, #stop-button.hide, .hide {
+    display: none;
+  }
+
+  #trabalho .yellow {
+    color: var(--yellow);
+  }
+  
+  #trabalho p.border-yellow {
+    border-color: var(--yellow);
   }

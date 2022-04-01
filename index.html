@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="inicio" style="display: none;">
+    <div class="inicio" style="">
         <div class="title">
             POMODORO
         </div>
@@ -44,7 +44,7 @@
                     </div>
                     <div class="info">
                         <div class="value">
-                            <input type="number" min="1" max="999" name="restTime" class="input-value" value="5" id="data-rest">
+                            <input type="number" onchange="checkValue(this.value, this.id)" min="1" max="999" name="restTime" class="input-value" value="5" id="data-rest">
                         </div>
                         <div class="text">
                             Pausa
@@ -71,7 +71,7 @@
         </section>
         <section id="continue">
             <div class="continue">
-                <button type="submit">Continuar<i class="fas fa-play"></i></button>
+                <button type="button" onclick="setValues()">Continuar<i class="fas fa-play"></i></button>
             </div>
         </section>
     </div>
@@ -91,19 +91,24 @@
                 </div>
                 <div class="content">
                     <div class="contador">
-                        <p data-contador><span data-minutes>25</span>:<span data-seconds>00</span></p>
+                        <p data-contador><span class="minutos" data-minutes></span></p>
+                        <div class="tempo-pausa" style="display: none;" data-pausa></div>
                     </div>
                     <div class="informacao">
                         <div class="status">
-                            <div class="info-texto">
+                            <div class="info-texto" data-info>
                                 Trabalho
                             </div>
                             <div class="info-sessao">
                                 º º º
+                                <div class="quantidade-sessoes" style="display: none;" data-sessoes></div>
                             </div>
                         </div>
-                        <div onclick="startCount()" class="play-button">
+                        <div onclick="startCount()" id="play-button">
                             <i class="fas fa-play"></i>
+                        </div>
+                        <div onclick="stopCount()" class="hide" id="stop-button">
+                            <i class="fas fa-pause"></i>
                         </div>
                     </div>
                 </div>
@@ -111,6 +116,6 @@
         </section>
     </div>
 </body>
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 
 </html>
